@@ -58,7 +58,8 @@ class Solution:
             paths = graph[pos]
             first = list(graph)
             temp = first[0]
-            for i in paths:
+            
+            for i in list(paths):
                 if paths[i] < temp:
                     temp = paths[i]
                     pos = i
