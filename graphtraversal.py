@@ -56,13 +56,11 @@ class Solution:
         # TODO: Write code below to return an int with the solution to the prompt
         while pos != "Finish":
             paths = graph[pos]
-            first = list(graph)
-            temp = first[0]
-            
-            for i in list(paths):
-                if paths[i] < temp:
-                    temp = paths[i]
-                    pos = i
+            temp = list(paths.values())[0]
+            for x in paths:
+                if paths[x] < temp:
+                    temp = paths[x]
+                    pos = x
             counter += temp
 
         
