@@ -8,7 +8,7 @@ Code Clash #16 - Graph Traversal (graphtraversal.py)
 
 Author: Chris Lai
 
-Difficulty Level: 10/10
+Difficulty Level: 10/10 
 
 Prompt: Before the Grand Prix, every contestant is given a map of different obstacles that are in the course. 
 The goal of the course is to reach the finish line as fast as possible while traveling through the obstacles. 
