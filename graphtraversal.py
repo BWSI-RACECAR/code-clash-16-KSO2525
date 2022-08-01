@@ -56,7 +56,8 @@ class Solution:
         # TODO: Write code below to return an int with the solution to the prompt
         while pos != "Finish":
             paths = graph[pos]
-            temp = list(graph)[0]
+            first = list(graph)
+            temp = first[0]
             for i in paths:
                 if paths[i] < temp:
                     temp = paths[i]
