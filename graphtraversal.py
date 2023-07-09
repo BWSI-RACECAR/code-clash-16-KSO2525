@@ -8,7 +8,7 @@ Code Clash #16 - Graph Traversal (graphtraversal.py)
 
 Author: Chris Lai
 
-Difficulty Level: 10/10
+Difficulty Level: 10/10 
 
 Prompt: Before the Grand Prix, every contestant is given a map of different obstacles that are in the course. 
 The goal of the course is to reach the finish line as fast as possible while traveling through the obstacles. 
@@ -56,11 +56,11 @@ class Solution:
         # TODO: Write code below to return an int with the solution to the prompt
         while pos != "Finish":
             paths = graph[pos]
-            temp = list(graph)[0]
-            for i in paths:
-                if paths[i] < temp:
-                    temp = paths[i]
-                    pos = i
+            temp = list(paths.values())[0]
+            for x in paths:
+                if paths[x] < temp:
+                    temp = paths[x]
+                    pos = x
             counter += temp
 
         
